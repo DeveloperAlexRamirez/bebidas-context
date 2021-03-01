@@ -1,0 +1,136 @@
+.contenedor-recetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 20rem;
+}
+
+.contenedor-recetas img {
+  width: 100%;
+}
+
+.receta-card {
+  flex: 0 1 calc(100% - 1rem);
+  margin-top: 1.5rem;
+  background-color: white;
+}
+
+.receta-card h2 {
+  color: #654062;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .receta-card {
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .receta-card {
+    flex: 0 1 calc(33% - 1rem);
+  }
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Btn de receta */
+.btn-receta {
+  width: 100%;
+  height: 3rem;
+  margin: 1rem 0;
+  background-color: #654062;
+  font-family: "Caveat", cursive;
+  font-size: 1.4rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: 300ms;
+}
+
+.btn-receta:hover {
+  background-color: #472e45;
+  cursor: pointer;
+  color: #65d6ce;
+}
+
+/* Estilos del modal */
+.titulo-receta {
+  font-family: "Bebas Neue";
+  letter-spacing: 1.5px;
+  color: #654062;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .titulo-receta {
+    text-align: unset;
+  }
+}
+
+.titulo-bebida {
+  font-family: "Caveat", cursive;
+  letter-spacing: 1.3px;
+  font-family: 2.4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #654062;
+}
+
+.titulo-ingredientes {
+  font-family: "Bebas Neue";
+  letter-spacing: 1.5px;
+  color: #654062;
+}
+.listado-ingredientes {
+  font-size: 1rem;
+}
+
+span {
+  font-weight: bold;
+  margin-left: 0.2rem;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Imagen de la bebida en el modal */
+.img-bebida-receta {
+  max-width: 200px;
+  max-height: 200px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .img-bebida-receta {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+/* Esta es la ventana modal */
+.paper {
+  position: absolute;
+  /* background-color: white; */
+  background-color: rgba(255, 255, 255, 0.863);
+  /* box-shadow;: theme.shadows[5]; */
+  padding: 2rem;
+  overflow: scroll;
+  max-height: 500px;
+  max-width: 400px;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .paper {
+    max-height: 700px;
+    padding: 1rem 3rem 2rem;
+  }
+}
